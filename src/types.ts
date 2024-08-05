@@ -1,3 +1,5 @@
+import { CITIES } from './constants';
+
 export type LocationType = {
   latitude: number;
   longitude: number;
@@ -44,3 +46,21 @@ export type User = {
   avatarUrl: string;
   isPro: boolean;
 };
+
+export type MapIconType = {
+  iconUrl: string;
+  iconSize: [number, number];
+  iconAnchor: [number, number];
+}
+
+export type MapIconsType = {
+  DEFAULT: MapIconType;
+  CURRENT: MapIconType;
+};
+
+export type TileLayerType = {
+  URL: string;
+  ATTRIBUTION: string;
+}
+
+export type CityName = typeof CITIES[number];
